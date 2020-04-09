@@ -1,0 +1,14 @@
+Error===> non-fast-forward error in github push
+
+execute below command
+
+sudo git pull origin master --allow-unrelated-histories
+
+ctr+0
+
+ctr+x
+
+sudo git push origin master
+
+
+
