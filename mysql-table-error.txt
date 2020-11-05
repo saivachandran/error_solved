@@ -1,0 +1,16 @@
+mysql doesn't have default value error
+
+
+
+SELECT @@GLOBAL.sql_mode;
+
+SET @@GLOBAL.sql_mode= 'ONLY_FULL_GROUP_BY,NO_ZERO_IN_DATE,NO_ZERO_DATE,ERROR_FOR_DIVISION_BY_ZERO,NO_AUTO_CREATE_USER'
+
+
+
+
+Find the line that looks like so in the mysql conf file:
+
+sql_mode=NO_ENGINE_SUBSTITUTION,STRICT_TRANS_TABLES
+
+Comment above line out and restart mysql serve
