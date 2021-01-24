@@ -1,0 +1,23 @@
+Problem
+
+When pushing a new repository to Bitbucket Server, the following error is returned from the Git client:
+
+git push -u origin master
+
+error: src refspec master does not match any.
+error: failed to push some refs to 'http://stash.company.com/scm/PROJECT/REPO.git'
+
+
+Resolution
+
+Create the first commit inside of the repository and then it can be pushed. For example, the following with create an initial commit and push it to the server.
+
+touch initial
+
+git add initial
+
+git commit -m "initial commit"
+
+git push -u origin master
+
+
