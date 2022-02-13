@@ -1,7 +1,7 @@
 # docker permission error in jenkins
 
-sudo usermod -aG docker jenkins
+     sudo usermod -aG docker jenkins
 
 # restart jenkins
 
-sudo systemctl restart jenkins
+    sudo systemctl restart jenkins
