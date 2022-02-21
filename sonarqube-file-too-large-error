@@ -1,0 +1,5 @@
+# edit nginx configuration file
+
+add below line in server section
+
+client_max_body_size 100M;
